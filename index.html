@@ -11,6 +11,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./src/output.css">
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
     <link rel="shortcut icon" href="./Images/WhatsApp Image 2025-03-11 at 11.20.34_f015da6a 2.svg" type="image/x-icon">
     <title>3REE Innovations</title>
 </head>
@@ -54,8 +56,8 @@
             </div>
         </section>
     </header>
-    <main class="py-[2.375rem] px-[0.75rem] bg-[#E3E2E2]">
-        <section class=" w-fit m-auto font-bold text-[2rem] text-[#638011] mb-[3.6rem]">
+    <main class="py-[2.375rem] bg-[#E3E2E2]">
+        <section class=" w-fit m-auto font-bold text-[2rem] text-[#638011] mb-[3.6rem] p-[1rem]">
             <h2 class="w-fit m-auto">
                 How it works
             </h2>
@@ -92,7 +94,7 @@
                 </div>
             </article>
         </section>
-        <section class=" w-fit m-auto font-bold text-[2rem] text-[#638011] mb-[3.6rem]">
+        <section class=" w-fit m-auto font-bold text-[2rem] text-[#638011] mb-[3.6rem] p-[1rem]">
             <h2 class="w-fit m-auto">
                 Our services
             </h2>
@@ -102,48 +104,169 @@
             <article class="flex flex-row flex-wrap w-fit m-auto gap-[2rem]">
                 <div class="bg-white lg:w-[23rem] border-2 border-[#E3E2E2] shadow-md rounded-lg lg:rounded-3xl flex flex-col">
                     <div>
-                        <img src="./Images/Rectangle 1.svg" alt="Image of a 3D Design" class="w-full rounded-lg lg:rounded-3xl">
+                        <img src="./Images/Rectangle 1.svg" alt="Image of a 3D Design" class="w-full rounded-t-lg lg:rounded-t-3xl">
                     </div>
                     <div class="py-[1rem] px-[1.35rem]">
                         <h2>3D Design</h2>
                         <p class="text-[#333333] text-[0.875rem] font-medium my-[1rem]">
                             Custom 3D modeling and design services tailored to your specific manufacturing requirements.
                         </p>
-                        <a href="#" class="border-[1px] border-[#638011] bg-transparent hover:text-white hover:bg-green-700 transition-all duration-300 text-[#638011] font-medium  px-[6.4rem] py-3 rounded-lg lg:text-lg text-[0.875rem] shadow-md ">
+                        <a href="#" class="border-[1px] border-[#638011] bg-transparent hover:text-white hover:bg-[#638011] transition-all duration-300 text-[#638011] font-medium  px-[6.4rem] py-3 rounded-lg lg:text-lg text-[0.875rem] shadow-md ">
                             <span class="">Learn more</span>
                         </a>
                     </div>
                 </div>
                 <div class="bg-white lg:w-[23rem] border-2 border-[#E3E2E2] shadow-md rounded-lg lg:rounded-3xl flex flex-col">
                     <div>
-                        <img src="./Images/Rectangle 2.svg" alt="Image of a 3D Design" class="w-full rounded-lg lg:rounded-3xl">
+                        <img src="./Images/Rectangle 2.svg" alt="Cup Prototype" class="w-full rounded-t-lg lg:rounded-t-3xl">
                     </div>
                     <div class="py-[1rem] px-[1.35rem]">
                         <h2>Visualization</h2>
                         <p class="text-[#333333] text-[0.875rem] font-medium my-[1rem]">
                             Photorealistic renders and prototypes to evaluate designs before production.
                         </p>
-                        <a href="#" class="border-[1px] border-[#638011] bg-transparent hover:text-white hover:bg-green-700 transition-all duration-300 text-[#638011] font-medium  px-[6.4rem] py-3 rounded-lg lg:text-lg text-[0.875rem] shadow-md ">
+                        <a href="#" class="border-[1px] border-[#638011] bg-transparent hover:text-white hover:bg-[#638011] transition-all duration-300 text-[#638011] font-medium  px-[6.4rem] py-3 rounded-lg lg:text-lg text-[0.875rem] shadow-md ">
                             <span class="">Learn more</span>
                         </a>
                     </div>
                 </div>
                 <div class="bg-white lg:w-[23rem] border-2 border-[#E3E2E2] shadow-md rounded-lg lg:rounded-3xl flex flex-col">
                     <div>
-                        <img src="./Images/Rectangle 3.svg" alt="Image of a 3D Design" class="w-full rounded-lg lg:rounded-3xl">
+                        <img src="./Images/Rectangle 3.svg" alt="working desk" class="w-full rounded-t-lg lg:rounded-t-3xl">
                     </div>
                     <div class="py-[1rem] px-[1.35rem]">
                         <h2>Fabrication Service</h2>
                         <p class="text-[#333333] text-[0.875rem] font-medium my-[1rem]">
                             Solutions can be fabricated through the artisan network provided, or taken to an external fabricator
                         </p>
-                        <a href="#" class="border-[1px] border-[#638011] bg-transparent hover:text-white hover:bg-green-700 transition-all duration-300 text-[#638011] font-medium  px-[6.4rem] py-3 rounded-lg lg:text-lg text-[0.875rem] shadow-md ">
+                        <a href="#" class="border-[1px] border-[#638011] bg-transparent hover:text-white hover:bg-[#638011] transition-all duration-300 text-[#638011] font-medium  px-[6.4rem] py-3 rounded-lg lg:text-lg text-[0.875rem] shadow-md ">
                             <span class="">Learn more</span>
                         </a>
                     </div>
                 </div>
             </article>
         </section>
+        <section class=" w-fit m-auto font-bold text-[2rem] text-[#638011] mb-[3.6rem] p-[1rem]">
+            <h2 class="w-fit m-auto">
+                Why choose us
+            </h2>
+            <p class="font-normal text-[#333333] lg:text-[0.9rem] text-[0.875rem] text-center lg:w-[30rem] m-auto my-2 mb-[2.375rem]">
+                We combine technical expertise with a deep understanding of the unique challenges faced by SMEs and artisans
+            </p>
+            <article class="flex flex-row flex-wrap w-fit m-auto gap-[0.5rem]">
+                <div class="bg-white p-[1.25rem] lg:p-[2.5rem] lg:w-[20rem] border-2 border-[#E3E2E2] shadow-md rounded-lg lg:rounded-3xl">
+                    <img src="./Images/check_icon.svg" alt="check_icon" class="m-auto">
+                    <h4 class="text-[#000000] font-semibold text-[1.125rem] text-center mt-[1.5rem]">
+                        Local Artisan Network
+                    </h4>
+                    <p class="text-[#1E1E1E] font-normal text-[0.875rem] text-center">
+                        Connected with skilled local craftspeople who understand traditional techniques and modern technologies
+                    </p>
+                </div>
+                <div class="bg-white p-[1.25rem] lg:p-[2.5rem] lg:w-[20rem] border-2 border-[#E3E2E2] shadow-md rounded-lg lg:rounded-3xl">
+                    <img src="./Images/check_icon.svg" alt="check_icon" class="m-auto">
+                    <h4 class="text-[#000000] font-semibold text-[1.125rem] text-center mt-[1.5rem]">
+                        Fast Turnaround
+                    </h4>
+                    <p class="text-[#1E1E1E] font-normal text-[0.875rem] text-center">
+                        Quick response times and efficient production processes to meet your business deadlines
+                    </p>
+                </div>
+                <div class="bg-white p-[1.25rem] lg:p-[2.5rem] lg:w-[20rem] border-2 border-[#E3E2E2] shadow-md rounded-lg lg:rounded-3xl">
+                    <img src="./Images/check_icon.svg" alt="check_icon" class="m-auto">
+                    <h4 class="text-[#000000] font-semibold text-[1.125rem] text-center mt-[1.5rem]">
+                        Expert Team
+                    </h4>
+                    <p class="text-[#1E1E1E] font-normal text-[0.875rem] text-center">
+                        Experienced designers and engineers who specialize in small-scale manufacturing solutions
+                    </p>
+                </div>
+                <div class="bg-white p-[1.25rem] lg:p-[2.5rem] lg:w-[20rem] border-2 border-[#E3E2E2] shadow-md rounded-lg lg:rounded-3xl">
+                    <img src="./Images/check_icon.svg" alt="check_icon" class="m-auto">
+                    <h4 class="text-[#000000] font-semibold text-[1.125rem] text-center mt-[1.5rem]">
+                        Cost-Effective
+                    </h4>
+                    <p class="text-[#1E1E1E] font-normal text-[0.875rem] text-center">
+                        Solutions designed to maximize value and minimize waste for small businesses and artisans
+                    </p>
+                </div>
+            </article>
+        </section>
+        <section class="bg-gradient-to-r from-[#50A000] to-[#1D3A00] flex justify-center items-center mb-[3.6rem]">
+            <!-- <h2 class="w-fit m-auto">
+                Recent Projects
+            </h2>
+            <p class="font-normal text-[#333333] lg:text-[0.9rem] text-[0.875rem] text-center lg:w-[30rem] m-auto my-2 mb-[2.375rem]">
+                Our simple three-step process helps your business overcome manufacturing challenges with custom 3D solutions
+            </p> -->
+
+            <div class="relative w-full max-w-4xl overflow-hidden">
+                <div id="carousel" class="flex space-x-6">
+                    <div class="project-card scale-75 hover:scale-100 transition-transform duration-300 ease-in-out">
+                        <img src="./Images/lamp.svg" alt="Rechargeable Lamp" class="rounded-lg shadow-lg">
+                        <p class="text-center text-white mt-2">Rechargeable Lamp</p>
+                    </div>
+                    <div class="project-card scale-90 hover:scale-110 transition-transform duration-300 ease-in-out">
+                        <img src="./Images/storage.svg" alt="3D Printer" class="rounded-lg shadow-lg">
+                        <p class="text-center text-white mt-2">3D Printer</p>
+                    </div>
+                    <div class="project-card scale-100">
+                        <img src="./Images/saw.svg" alt="Gadget Stand" class="rounded-lg shadow-lg">
+                        <p class="text-center text-white mt-2 font-bold">Gadget Stand</p>
+                    </div>
+                    <div class="project-card scale-90 hover:scale-110 transition-transform duration-300 ease-in-out">
+                        <img src="./Images/wind vane.svg" alt="3D Artwork" class="rounded-lg shadow-lg">
+                        <p class="text-center text-white mt-2">3D Artwork</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class=" w-fit m-auto font-bold text-[2rem] text-[#638011] mb-[3.6rem] p-[1rem]">
+            <h2 class="w-fit m-auto">
+                Client Testimonials
+            </h2>
+            <p class="font-normal text-[#333333] lg:text-[0.9rem] text-[0.875rem] text-center lg:w-[30rem] m-auto my-2 mb-[2.375rem]">
+                See what our clients say about working with us
+            </p>
+            <article class="flex flex-row flex-wrap w-fit m-auto gap-[2rem]">
+                <div class="bg-white p-[1.25rem] lg:p-[2.5rem] lg:w-[23rem] border-2 border-[#E3E2E2] shadow-md rounded-lg lg:rounded-3xl">
+                    <p class="text-[#1E1E1E] font-normal text-[0.875rem] text-center">
+                        Their 3D design solutions helped us solve a complex production bottleneck that had been limiting our growth for years. The team understood our constraints as a small business and created a solution we could actually implement.
+                    </p>
+                    <h4 class="text-[#000000] font-semibold text-[1.125rem] text-center mt-[1.5rem]">
+                        Khadijat Olawole
+                    </h4>
+                    <p class="text-[#777777] font-normal text-[0.75rem] m-auto w-fit">
+                       Artisan woodwork
+                    </p>
+                </div>
+                <div class="bg-white p-[1.25rem] lg:p-[2.5rem] lg:w-[23rem] border-2 border-[#E3E2E2] shadow-md rounded-lg lg:rounded-3xl">
+                    <p class="text-[#1E1E1E] font-normal text-[0.875rem] text-center">
+                        As a small-batch ceramics studio, we needed custom molds that would work with our traditional techniques. The 3D Solutions Hub team delivered exactly what we needed within our tight budget
+                    </p>
+                    <h4 class="text-[#000000] font-semibold text-[1.125rem] text-center mt-[1.5rem]">
+                        Opeyemi Peter
+                    </h4>
+                    <p class="text-[#777777] font-normal text-[0.75rem] m-auto w-fit">
+                        Terra Ceramics
+                    </p>
+                </div>
+            </article>
+        </section>
     </main>
+
+    <script>
+        const tl = gsap.timeline({ repeat: -1, defaults: { ease: "power2.inOut", duration: 1.5 } });
+        tl.to(".project-card", {
+            scale: 0.75,
+            opacity: 0.7,
+            stagger: { each: 1, repeat: -1, yoyo: true }
+        }).to(".project-card:nth-child(3)", {
+            scale: 1,
+            opacity: 1,
+        }, "-=1.5");
+    </script>
+
 </body>
 </html>
