@@ -1,4 +1,39 @@
+const menuBtn = document.getElementById('menu-btn');
+const mobileMenu = document.getElementById('mobile-menu');
+const sideMenu = document.getElementById('side-menu');
+const closeBtn = document.getElementById('close-btn');
+const navLinks = document.querySelectorAll('.nav-link'); // Select all nav links
 
+// Open menu
+menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.remove('hidden');
+    setTimeout(() => {
+        sideMenu.classList.remove('-translate-x-full');
+    }, 10);
+});
+
+// Close menu function
+function closeMenu() {
+    sideMenu.classList.add('-translate-x-full');
+    setTimeout(() => {
+        mobileMenu.classList.add('hidden');
+    }, 300);
+}
+
+// Close on clicking the close button
+closeBtn.addEventListener('click', closeMenu);
+
+// Close when clicking outside the menu (on overlay)
+mobileMenu.addEventListener('click', (e) => {
+    if (e.target === mobileMenu) {
+        closeMenu();
+    }
+});
+
+// Close menu when clicking on a navigation link
+navLinks.forEach(link => {
+    link.addEventListener('click', closeMenu);
+});
 
 
 document.querySelectorAll(".nav-link").forEach(link => {
@@ -37,3 +72,18 @@ tl.to(".project-card", {
 }, "-=1.5");
 
 
+const scrollBtn = document.getElementById("scrollToTop");
+
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+        scrollBtn.classList.remove("hidden");
+        scrollBtn.classList.add("opacity-100");
+    } else {
+        scrollBtn.classList.add("hidden");
+        scrollBtn.classList.remove("opacity-100");
+    }
+});
+
+scrollBtn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+});
