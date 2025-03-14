@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="./src/output.css">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
 
     <link rel="shortcut icon" href="./Images/WhatsApp Image 2025-03-11 at 11.20.34_f015da6a 2.svg" type="image/x-icon">
     <title>3REE Innovations</title>
@@ -32,11 +33,24 @@
             </div>
             <div class="lg:flex hidden">
                 <ul class="text-[#333] font-[600] gap-10 flex flex-wrap">
-                    <li>How it works</li>
-                    <li>Our services</li>
-                    <li>Why choose us</li>
-                    <li>Recent project</li>
-                    <li>Client Testimonials</li>
+                    <a href="#works" class="nav-link relative">
+                        <li class="pb-1 after:block after:w-0 after:h-[2px] after:bg-[#3F7E01] after:transition-all after:duration-300 hover:after:w-full">How it works</li>
+                    </a>
+                    <a href="#services" class="relative nav-link">
+                        <li class="pb-1 after:block after:w-0 after:h-[2px] after:bg-[#3F7E01] after:transition-all after:duration-300 hover:after:w-full">Our services</li>
+                    </a>
+                    <a href="#why" class="relative nav-link">
+                        <li class="pb-1 after:block after:w-0 after:h-[2px] after:bg-[#3F7E01] after:transition-all after:duration-300 hover:after:w-full">Why choose us</li>
+                    </a>
+                    <a href="#project" class="relative nav-link">
+                        <li class="pb-1 after:block after:w-0 after:h-[2px] after:bg-[#3F7E01] after:transition-all after:duration-300 hover:after:w-full">Recent project</li>
+                    </a>
+                    <a href="#testimonials" class="relative nav-link">
+                        <li class="pb-1 after:block after:w-0 after:h-[2px] after:bg-[#3F7E01] after:transition-all after:duration-300 hover:after:w-full">Client Testimonials</li>
+                    </a>
+                    <a href="#contact" class="relative nav-link">
+                        <li class="pb-1 after:block after:w-0 after:h-[2px] after:bg-[#3F7E01] after:transition-all after:duration-300 hover:after:w-full">Contact Us</li>
+                    </a>
                 </ul>
             </div>
             <div class="flex lg:hidden">
@@ -45,7 +59,7 @@
         </nav>
         <section style="background-image: url(./Images/Background_image.svg);" class="bg-cover bg-no-repeat w-full h-[35rem] px-[1.45rem] py-[3.16rem]" >
             <div class="m-auto text-center justify-center w-fit my-12">
-                <h1 class="font-bold text-[#fff] lg:text-[2.5rem] text-[1.35rem] lg:w-[52rem] max-w-[30rem] m-auto drop-shadow-lg">
+                <h1 class="font-bold text-[#fff] lg:text-[2.5rem] text-[1.35rem] lg:w-[52rem] md:w-[30rem] m-auto drop-shadow-lg">
                     Customized 3D Design & Manufacturing Solutions for SMEs, Startups and Artisans
                 </h1>
                 <p class="my-[2rem] lg:my-[2rem] text-[#BFBFBF] drop-shadow-md lg:w-[40rem] w-[20rem] m-auto">
@@ -62,8 +76,8 @@
             </div>
         </section>
     </header>
-    <main class="py-[2.375rem] bg-[#E3E2E2]">
-        <section class=" w-fit m-auto font-bold text-[2rem] text-[#638011] mb-[3.6rem] p-[1rem]">
+    <main class="pt-[2.375rem] bg-[#E3E2E2] transition-transform duration-700" id="container">
+        <section class=" w-fit m-auto font-bold text-[2rem] text-[#638011] mb-[3.6rem] p-[1rem]" id="works">
             <h2 class="w-fit m-auto">
                 How it works
             </h2>
@@ -74,7 +88,7 @@
                 <div class="bg-white p-[1.25rem] lg:p-[2.5rem] max-w-[23rem] border-2 border-[#E3E2E2] shadow-md rounded-lg lg:rounded-3xl">
                     <h3 class="bg-[#638011] w-[3rem] h-[3rem] text-white rounded-full text-center m-auto">1</h3>
                     <h4 class="text-[#000000] font-semibold text-[1.125rem] text-center mt-[1.5rem]">
-                        Submit Your Project
+                        Submit Your Challenges
                     </h4>
                     <p class="text-[#1E1E1E] font-normal text-[0.875rem] text-center">
                         Tell us about your manufacturing challenge or product idea. We'll analyze your requirements and discuss possibilities.
@@ -100,7 +114,7 @@
                 </div>
             </article>
         </section>
-        <section class=" w-fit m-auto font-bold text-[2rem] text-[#638011] mb-[3.6rem] p-[1rem]">
+        <section class=" w-fit m-auto font-bold text-[2rem] text-[#638011] mb-[3.6rem] p-[1rem]" id="services">
             <h2 class="w-fit m-auto">
                 Our services
             </h2>
@@ -108,7 +122,7 @@
                 Comprehensive 3D solutions to enhance your manufacturing capabilities and product development.
             </p>
             <article class="flex flex-row flex-wrap w-fit m-auto gap-[2rem] justify-center">
-                <div class="bg-white lg:w-[30rem] max-w-[23rem] border-2 border-[#E3E2E2] shadow-md rounded-lg lg:rounded-3xl flex flex-col">
+                <div class="bg-white lg:w-[30rem] max-w-[23rem] border-2 border-[#E3E2E2] shadow-md rounded-lg lg:rounded-3xl flex flex-col" id="3D">
                     <div>
                         <img src="./Images/Rectangle 1.svg" alt="Image of a 3D Design" class="w-full rounded-t-lg lg:rounded-t-3xl">
                     </div>
@@ -122,7 +136,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="bg-white lg:w-[30rem] max-w-[23rem] border-2 border-[#E3E2E2] shadow-md rounded-lg lg:rounded-3xl flex flex-col">
+                <div class="bg-white lg:w-[30rem] max-w-[23rem] border-2 border-[#E3E2E2] shadow-md rounded-lg lg:rounded-3xl flex flex-col" id="visualization">
                     <div>
                         <img src="./Images/Rectangle 2.svg" alt="Cup Prototype" class="w-full rounded-t-lg lg:rounded-t-3xl">
                     </div>
@@ -136,7 +150,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="bg-white lg:w-[23rem] max-w-[30rem] border-2 border-[#E3E2E2] shadow-md rounded-lg lg:rounded-3xl flex flex-col">
+                <div class="bg-white lg:w-[23rem] max-w-[30rem] border-2 border-[#E3E2E2] shadow-md rounded-lg lg:rounded-3xl flex flex-col" id="fabrication">
                     <div>
                         <img src="./Images/Rectangle 3.svg" alt="working desk" class="w-full rounded-t-lg lg:rounded-t-3xl">
                     </div>
@@ -152,12 +166,12 @@
                 </div>
             </article>
         </section>
-        <section class=" w-fit m-auto font-bold text-[2rem] text-[#638011] mb-[3.6rem] p-[1rem]">
+        <section class=" w-fit m-auto font-bold text-[2rem] text-[#638011] mb-[3.6rem] p-[1rem]" id="why">
             <h2 class="w-fit m-auto">
                 Why choose us
             </h2>
             <p class="font-normal text-[#333333] lg:text-[0.9rem] text-[0.875rem] text-center lg:w-[30rem] max-w-[30rem] m-auto my-2 mb-[2.375rem]">
-                We combine technical expertise with a deep understanding of the unique challenges faced by SMEs and artisans
+                We combine technical expertise with a deep understanding of the unique challenges faced by SMEs, startups and artisans.
             </p>
             <article class="flex flex-row flex-wrap w-fit m-auto lg:gap-[0.5rem] gap-[1rem] justify-center">
                 <div class="bg-white p-[1.25rem] lg:p-[2.5rem] lg:w-[20rem] max-w-[23rem] border-2 border-[#E3E2E2] shadow-md rounded-lg lg:rounded-3xl">
@@ -198,7 +212,7 @@
                 </div>
             </article>
         </section>
-        <section class="bg-gradient-to-r from-[#50A000] to-[#1D3A00] py-[2.4rem] flex flex-col justify-center items-center mb-[3.6rem]">
+        <section class="bg-gradient-to-r from-[#50A000] to-[#1D3A00] py-[2.4rem] flex flex-col justify-center items-center mb-[3.6rem]" id="project">
             <h2 class="w-fit m-auto text-white font-bold text-[2rem]">
                 Recent Projects
             </h2>
@@ -228,7 +242,7 @@
             </div>
         </section>
 
-        <section class=" w-fit m-auto font-bold text-[2rem] text-[#638011] mb-[3.6rem] p-[1rem]">
+        <section class=" w-fit m-auto font-bold text-[2rem] text-[#638011] mb-[3.6rem] p-[1rem]" id="testimonials">
             <h2 class="w-fit m-auto">
                 Client Testimonials
             </h2>
@@ -238,10 +252,10 @@
             <article class="flex flex-row flex-wrap w-fit m-auto gap-[2rem] justify-center ">
                 <div class="bg-white p-[1.25rem] lg:p-[2.5rem] lg:w-[23rem] max-w-[23rem] border-2 border-[#E3E2E2] shadow-md rounded-lg lg:rounded-3xl">
                     <p class="text-[#1E1E1E] font-normal text-[0.875rem] text-center">
-                        Their 3D design solutions helped us solve a complex production bottleneck that had been limiting our growth for years. The team understood our constraints as a small business and created a solution we could actually implement.
+                        Their 3D innovations helped us solve a complex production bottleneck that had been limiting our growth for years. The team understood our constraints as a small business and created a solution we could actually implement.
                     </p>
                     <h4 class="text-[#000000] font-semibold text-[1.125rem] text-center mt-[1.5rem]">
-                        Khadijat Olawole
+                        Opeyemi Peter
                     </h4>
                     <p class="text-[#777777] font-normal text-[0.75rem] m-auto w-fit">
                        Artisan woodwork
@@ -249,10 +263,10 @@
                 </div>
                 <div class="bg-white p-[1.25rem] lg:p-[2.5rem] lg:w-[23rem] max-w-[23rem] border-2 border-[#E3E2E2] shadow-md rounded-lg lg:rounded-3xl">
                     <p class="text-[#1E1E1E] font-normal text-[0.875rem] text-center">
-                        As a small-batch ceramics studio, we needed custom molds that would work with our traditional techniques. The 3D Solutions Hub team delivered exactly what we needed within our tight budget
+                        As a small-batch ceramics studio, we needed custom molds that would work with our traditional techniques. The 3D innovations Hub team delivered exactly what we needed within our tight budget
                     </p>
                     <h4 class="text-[#000000] font-semibold text-[1.125rem] text-center mt-[1.5rem]">
-                        Opeyemi Peter
+                        Khadijat Olawole
                     </h4>
                     <p class="text-[#777777] font-normal text-[0.75rem] m-auto w-fit">
                         Terra Ceramics
@@ -261,109 +275,133 @@
             </article>
         </section>
 
-        <section class="bg-gradient-to-r from-[#50A000] to-[#1D3A00] flex flex-col justify-center items-center p-[1rem] py-[3.59rem]">
+        <section class="bg-gradient-to-r from-[#50A000] to-[#1D3A00] flex flex-col justify-center items-center p-[1rem] py-[3.59rem]" id="contact">
             <h2 class="text-[#FFFFFF] font-bold lg:text-[2rem] text-[1.4rem] text-center w-fit">
                 Let's Solve Your Production Problem
             </h2>
             <p class="text-[#FEFEFE] text-center lg:text-[1rem] lg:w-[32rem] max-w-[32rem] text-[0.9rem] font-normal my-[1rem]">
                 Transform your manufacturing challenges into opportunities with our customized 3D solutions.
             </p>
-            <a href="#" class="bg-white text-green-700 font-bold px-5 py-3 rounded-lg lg:text-lg text-[0.875rem] shadow-md hover:bg-transparent hover:border-2 hover:border-white hover:text-white ">
+            <a href="https://wa.link/rondy9" class="bg-white text-green-700 font-bold px-5 py-3 rounded-lg lg:text-lg text-[0.875rem] shadow-md hover:bg-transparent hover:border-2 hover:border-white hover:text-white ">
                 <span class="">Get started now</span>
             </a>
         </section>
-
-        <footer class="bg-[#112300] text-white  lg:py-[4rem] py-[2rem] px-[1rem] md:px-16 font-[Inter]">
-            <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
-              <!-- Left Section (Company Info) -->
-              <div>
-                <a href="./index.html">
-                    <img src="./Images/Logo.svg" alt="3REE Innovations LTD Logo">
-                </a>
-                <p class="mt-2 text-[1rem] font-semibold text-[#EAECF0]">
-                  Customized 3D design & manufacturing solutions for SMEs and artisans.
-                </p>
-                <div class="flex gap-3 mt-4">
-                  <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
-                  <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedln"></i></a>
-                  <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook"></i></a>
-                  <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-whatsapp"></i></a>
-                </div>
-              </div>
-          
-              <!-- Quick Links -->
-              <div>
-                <h3 class="font-semibold text-[#98A2B3] text-[0.875rem]">Quick Links</h3>
-                <ul class="mt-2 space-y-1 text-[0.75rem] text-[#EAECF0]">
-                    <a href="#" class="hover:underline">
-                        <li>How It Works</li>
-                    </a>
-                    <a href="#" class="hover:underline">
-                        <li>Services</li>
-                    </a>
-                    <a href="#" class="hover:underline">
-                        <li>Portfolio</li>
-                    </a>
-                    <a href="#" class="hover:underline">
-                        <li>Submit a project</li>
-                    </a>
-                </ul>
-              </div>
-          
-              <!-- Services -->
-              <div>
-                <h3 class="font-semibold text-[#98A2B3] text-[0.875rem]">Services</h3>
-                <ul class="mt-2 space-y-1 text-[0.75rem] text-[#EAECF0]">
-                    <a href="#" class="hover:underline">
-                        <li>3D Design</li>
-                    </a>
-                    <a href="#" class="hover:underline">
-                        <li>Product Sale</li>
-                    </a>
-                    <a href="#" class="hover:underline">
-                        <li>Visualization</li>
-                    </a>
-                    <a href="#" class="hover:underline">
-                        <li>Fabrication</li>
-                    </a>
-                    <a href="#" class="hover:underline">
-                        <li>Manufacturing Consulting</li>
-                    </a>
-                </ul>
-              </div>
-          
-              <!-- Contact & Subscription -->
-              <div>
-                <h3 class="font-semibold text-[#98A2B3] text-[0.875rem]">Contact Us</h3>
-                <ul class="mt-2 space-y-1 text-[0.75rem] text-[#EAECF0]">
-                    <a href="#" class="hover:underline">
-                        <li>Phone Number</li>
-                    </a>
-                    <a href="#" class="hover:underline">
-                        <li>Email Address</li>
-                    </a>
-                </ul>
-                <form class="mt-3 flex">
-                  <input
-                    type="email"
-                    placeholder="Enter email"
-                    class="w-full px-3 py-2 text-gray-900 rounded-l-md focus:outline-none"
-                  />
-                  <button class="bg-green-600 px-4 py-2 rounded-r-md hover:bg-green-700">
-                    Get Started
-                  </button>
-                </form>
-              </div>
-            </div>
-          
-            <!-- Bottom Section -->
-            <div class="text-center mt-6 text-sm text-gray-400 bg-[#0B1700]">
-              © SME Innovations LTD
-            </div>
-          </footer>
     </main>
+    <footer class="text-white font-[Inter]">
+        <div class="bg-[#112300] lg:grid flex flex-wrap justify-between grid-cols-1 md:grid-cols-4 gap-8 lg:py-[4rem] py-[2rem] lg:px-[3rem] px-[1rem] w-full ">
+          <!-- Left Section (Company Info) -->
+          <div>
+            <a href="./index.html">
+                <img src="./Images/Logo.svg" alt="3REE Innovations LTD Logo">
+            </a>
+            <p class="mt-2 text-[1rem] font-semibold text-[#EAECF0]">
+              Customized 3D design & manufacturing solutions for SMEs and artisans.
+            </p>
+            <div class="flex gap-3 mt-4">
+              <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin"></i></a>
+              <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook"></i></a>
+              <a href="https://wa.link/rondy9" class="text-gray-400 hover:text-white"><i class="fab fa-whatsapp"></i></a>
+            </div>
+          </div>
+      
+          <!-- Quick Links -->
+          <div>
+            <h3 class="font-semibold text-[#98A2B3] text-[0.875rem]">Quick Links</h3>
+            <ul class="mt-2 space-y-1 text-[0.75rem] text-[#EAECF0]">
+                <a href="#works" class="hover:underline footer-link">
+                    <li>How It Works</li>
+                </a>
+                <a href="#services" class="hover:underline footer-link">
+                    <li>Services</li>
+                </a>
+                <a href="#" class="hover:underline footer-link">
+                    <li>Portfolio</li>
+                </a>
+                <a href="#" class="hover:underline footer-link">
+                    <li>Submit a project</li>
+                </a>
+            </ul>
+          </div>
+      
+          <!-- Services -->
+          <div>
+            <h3 class="font-semibold text-[#98A2B3] text-[0.875rem]">Services</h3>
+            <ul class="mt-2 space-y-1 text-[0.75rem] text-[#EAECF0]">
+                <a href="#3D" class="hover:underline footer-link">
+                    <li>3D Design</li>
+                </a>
+                <a href="#" class="hover:underline footer-link">
+                    <li>Product Sale</li>
+                </a>
+                <a href="#visualization" class="hover:underline footer-link">
+                    <li>Visualization</li>
+                </a>
+                <a href="#fabrication" class="hover:underline footer-link">
+                    <li>Fabrication</li>
+                </a>
+                <a href="#" class="hover:underline footer-link">
+                    <li>Manufacturing Consulting</li>
+                </a>
+            </ul>
+          </div>
+      
+          <!-- Contact & Subscription -->
+          <div>
+            <h3 class="font-semibold text-[#98A2B3] text-[0.875rem]">Contact Us</h3>
+            <ul class="mt-2 space-y-1 text-[0.75rem] text-[#EAECF0]">
+                <a href="tel:+2347083757318" class="hover:underline">
+                    <li>+234 708 3757 318</li>
+                </a>
+                <a href="mailto:3reeinnovations@gmail.com" class="hover:underline">
+                    <li>3reeinnovations@gmail.com</li>
+                </a>
+            </ul>
+            <form class="mt-3 flex text-[0.8rem]">
+              <input
+                type="email"
+                placeholder="Enter email"
+                class="w-full px-3 text-gray-900 rounded-l-md focus:outline-none"
+              />
+              <button class="bg-[#638011] w-[10rem] p-3 rounded-r-md hover:bg-[#1D3A00]">
+                Get Started
+              </button>
+            </form>
+          </div>
+        </div>
+      
+        <!-- Bottom Section -->
+        <div class="text-start text-sm text-[#98A2B3] bg-[#0B1700] lg:py-[2rem] py-[2rem] lg:px-[3rem] px-[1rem]">
+          © SME Innovations
+        </div>
+    </footer>
 
     <script>
+        document.querySelectorAll(".nav-link").forEach(link => {
+            link.addEventListener("click", function (e) {
+                e.preventDefault();
+                let targetId = this.getAttribute("href"); // Get section ID
+                let targetSection = document.querySelector(targetId);
+
+                if (targetSection) {
+                    gsap.to(window, { duration: 1.5, scrollTo: targetSection, ease: "power2.inOut" });
+                }
+            });
+        });
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelectorAll(".footer-link").forEach(link => {
+                link.addEventListener("click", function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute("href").substring(1); // Remove #
+                    const targetElement = document.getElementById(targetId);
+                    
+                    if (targetElement) {
+                        targetElement.scrollIntoView({ behavior: "smooth", block: "start" });
+                    }
+                });
+            });
+        });
+        
         const tl = gsap.timeline({ repeat: -1, defaults: { ease: "power2.inOut", duration: 1.5 } });
         tl.to(".project-card", {
             scale: 0.75,
